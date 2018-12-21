@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class JenkinsTestController {
     @GetMapping("/test")
     public String jenkinsTest(){
-        return "jenkins成功！";
+        return "jenkins自动部署啦！";
     }
 
     @GetMapping("auto")
