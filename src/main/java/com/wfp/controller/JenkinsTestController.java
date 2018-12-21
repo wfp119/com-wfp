@@ -19,4 +19,9 @@ public class JenkinsTestController {
     public String autoUpdate2(){
         return "自动部署2！";
     }
+
+    @GetMapping("auto3")
+    public String autoUpdate3(){
+        return "自动部署3！";
+    }
 }
