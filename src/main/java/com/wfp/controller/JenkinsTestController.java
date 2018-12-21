@@ -9,4 +9,9 @@ public class JenkinsTestController {
     public String jenkinsTest(){
         return "jenkins成功！";
     }
+
+    @GetMapping("auto")
+    public String autoUpdate(){
+        return "自动部署！";
+    }
 }
