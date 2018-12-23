@@ -1,6 +1,6 @@
 echo "Stopping SpringBoot Application"
 #
-filename="com-wfp-0.0.1-SNAPSHOT"
+filename="com-wfp-0.0.2-SNAPSHOT"
 file="/usr/local/myweb/run/$filename.jar"
 pid=`ps -ef | grep $filename | grep -v grep | awk '{print $2}'`
 if [ -n "$pid" ]
