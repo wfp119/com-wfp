@@ -10,11 +10,11 @@ fi
 
 if [ -f "$file" ]
 then
-   mv /usr/local/myweb/run/${filename} /usr/local/myweb/backup/${filename}&date +%Y%m%d
+   mv /usr/local/myweb/run/${filename}.jar /usr/local/myweb/backup/${filename}.jar&date +%Y%m%d
 fi
-mv /usr/local/myweb/${filename} /usr/local/myweb/run/${filename}
+mv /usr/local/myweb/${filename}.jar /usr/local/myweb/run/${filename}.jar
 
 echo "chmod"
-chmod 777 /usr/local/myweb/run/${filename}
+chmod 777 /usr/local/myweb/run/${filename}.jar
 echo "nohup"
-java -jar /usr/local/myweb/run/${filename} &
+java -jar /usr/local/myweb/run/${filename}.jar &
