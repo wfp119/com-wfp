@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 echo "Stopping SpringBoot Application"
 #
 filename="com-wfp-0.0.2-SNAPSHOT"
