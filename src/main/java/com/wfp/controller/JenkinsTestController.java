@@ -34,8 +34,9 @@ public class JenkinsTestController {
     public String autoUpdate5(){
         return "自动部署5！";
     }
+
     @GetMapping("auto6")
-    public String autoFinal(){
-        return "真正的自动部署！";
+    public String autoUpdate6(){
+        return "自动部署6！";
     }
 }
