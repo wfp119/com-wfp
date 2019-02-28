@@ -3,6 +3,11 @@ package com.wfp.controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 @RestController
 public class JenkinsTestController {
     @GetMapping("/test")
@@ -11,7 +16,12 @@ public class JenkinsTestController {
     }
 
     @GetMapping("auto")
-    public String autoUpdate(){
+    public String autoUpdate(HttpServletRequest request, HttpServletResponse response){
+        HttpSession session = request.getSession();
+        Cookie cookie = new Cookie("hehe","123");
+        cookie.setDomain(".localhost");
+        response.addCookie(cookie);
+
         return "自动部署！";
     }
 
